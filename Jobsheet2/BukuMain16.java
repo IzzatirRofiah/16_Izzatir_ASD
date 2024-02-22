@@ -15,5 +15,9 @@ public class BukuMain16 {
         Buku16 bk2 = new Buku16("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku16 bukuIzzatir = new Buku16("Hujan", "Tere Liye", 332, 50, 89000);
+        bukuIzzatir.terjual(16);
+        bukuIzzatir.tampilInformasi();
     }
 }
