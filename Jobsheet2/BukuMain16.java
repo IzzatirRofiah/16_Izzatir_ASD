@@ -17,7 +17,16 @@ public class BukuMain16 {
         bk2.tampilInformasi();
 
         Buku16 bukuIzzatir = new Buku16("Hujan", "Tere Liye", 332, 50, 89000);
-        bukuIzzatir.terjual(16);
         bukuIzzatir.tampilInformasi();
+
+        int jumlahTerjual = 5;
+        int hargaTotal = bukuIzzatir.hitungHargaTotal(jumlahTerjual);
+        int diskon = bukuIzzatir.hitungDiskon(hargaTotal);
+        int hargaBayar = bukuIzzatir.hitungHargaBayar(hargaTotal, diskon);
+
+        System.out.println("Jumlah terjual : " + jumlahTerjual);
+        System.out.println("Harga total: Rp " + hargaTotal);
+        System.out.println("Diskon: Rp " + diskon);
+        System.out.println("Harga bayar: Rp " + hargaBayar);
     }
 }
