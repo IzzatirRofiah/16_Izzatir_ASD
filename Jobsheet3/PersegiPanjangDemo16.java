@@ -30,9 +30,13 @@ public class PersegiPanjangDemo16 {
             System.out.print("Masukkan lebar : ");
             arrayOfPersegiPanjang[i].lebar = sc.nextInt();
         }
+//        System.out.println();
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println("Persegi panjang ke-" + (i + 1) + ", panjang : " + arrayOfPersegiPanjang[i].panjang + ", lebar : " + arrayOfPersegiPanjang[i].lebar);
+//        }
         System.out.println();
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Persegi panjang ke-" + (i + 1) + ", panjang : " + arrayOfPersegiPanjang[i].panjang + ", lebar : " + arrayOfPersegiPanjang[i].lebar);
+        for(int i = 0; i < 3; i++){
+            arrayOfPersegiPanjang[i].cetakInfo(i);
         }
     }
 }
