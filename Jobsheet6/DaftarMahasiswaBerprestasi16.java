@@ -40,14 +40,25 @@ public class DaftarMahasiswaBerprestasi16 {
             listMhs[i] = tmp;
         }
     }
-    void insertionSort(){
-        for (int i = 1; i < listMhs.length; i++){
+    void insertionSort() {
+        for (int i = 1; i < listMhs.length; i++) {
             Mahasiswa16 temp = listMhs[i];
             int j = i;
-            while (j > 0 && listMhs[j - 1].ipk > temp.ipk){
+            while (j > 0 && listMhs[j -1].ipk > temp.ipk) {
                 j--;
             }
             listMhs[j] = temp;
         }
     }
+//    void insertionSort() {
+//        for (int i = 1; i < listMhs.length; i++) {
+//            Mahasiswa16 temp = listMhs[i];
+//            int j = i - 1;
+//            while (j >= 0 && listMhs[j].ipk < temp.ipk) {
+//                listMhs[j + 1] = listMhs[j];
+//                j--;
+//            }
+//            listMhs[j + 1] = temp;
+//        }
+//    }
 }

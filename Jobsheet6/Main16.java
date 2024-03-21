@@ -34,6 +34,7 @@ public class Main16 {
         System.out.println();
         System.out.println("Data Mahasiswa Setelah Sorting ASC Berdasarkan IPK");
         System.out.println("----------------------------------------------------");
+        list.insertionSort();
         list.tampil();
     }
 }
