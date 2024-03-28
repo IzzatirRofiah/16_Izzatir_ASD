@@ -36,5 +36,12 @@ public class MahasiswaMain16 {
 
             data.TampilPosisi(cari, posisi);
             data.TampilData(cari,posisi);
+
+            System.out.println("=================================================");
+            System.out.println("Menggunakan binary Search");
+            posisi = data.FindBinarySearch(cari, 0, jumMhs -1);
+
+            data.TampilPosisi(cari, posisi);
+            data.TampilData(cari,posisi);
     }
 }
