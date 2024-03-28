@@ -49,7 +49,7 @@ public class PencarianMhs16 {
             mid = (left + rigth) /2;
             if (cari == listMhs[mid].nim){
                 return (mid);
-            } else if (listMhs[mid].nim > cari) {
+            } else if (listMhs[mid].nim < cari) {
                 return FindBinarySearch(cari, left, mid -1);
             } else {
                 return FindBinarySearch(cari, mid + 1, rigth);
