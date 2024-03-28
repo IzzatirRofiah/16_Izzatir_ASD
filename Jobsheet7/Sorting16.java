@@ -10,7 +10,7 @@ public class Sorting16 {
     }
 
     public static void main(String[] args) {
-        int [] daftarNilai = {10, 5, 20, 15, 80, 45};
+        int [] daftarNilai = {10, 5, 20, 15, 5, 45};
         sequentialSearch(daftarNilai, 5);
     }
 }
