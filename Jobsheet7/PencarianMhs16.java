@@ -2,6 +2,10 @@ public class PencarianMhs16 {
     Mahasiswa16 listMhs[] = new Mahasiswa16[5];
     int idx;
 
+    PencarianMhs16(int jumlahMahasiswa) {
+        listMhs = new Mahasiswa16[jumlahMahasiswa];
+                idx = 0;
+        }
     void tambah(Mahasiswa16 m){
         if (idx < listMhs.length){
             listMhs[idx] = m;

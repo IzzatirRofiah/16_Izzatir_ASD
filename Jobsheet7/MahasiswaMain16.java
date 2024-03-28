@@ -1,11 +1,14 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class MahasiswaMain16 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Scanner s1 = new Scanner(System.in);
 
-        PencarianMhs16 data = new PencarianMhs16();
-        int jumMhs = 5;
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = s.nextInt();
+        PencarianMhs16 data = new PencarianMhs16(jumMhs);
+
         System.out.println("-----------------------------------------------------");
         System.out.println("Masukkan data mahasiswa secara Urut dari NIM Terkecil");
         for (int i = 0; i < jumMhs; i++) {
