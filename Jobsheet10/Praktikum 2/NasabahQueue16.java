@@ -49,7 +49,14 @@ public class NasabahQueue16 {
         }
         return dt;
     }
-
+    public Nasabah16 peekRear() {
+        if (!IsEmpty()) {
+            return data[rear];
+        } else {
+            System.out.println("Queue masih kosong");
+            return null;
+        }
+    }
     public void peek() {
         if (!IsEmpty()) {
             System.out.println("Elemen terdepan : " + data[front].noRek + " " + data[front].nama

@@ -1,12 +1,13 @@
 import java.util.Scanner;
 public class NasabahMain16 {
-    public static void menu(){
-        System.out.println("Pilih menu:");
+    public static void menu() {
+        System.out.println("Pilih menu: ");
         System.out.println("1. Antrian baru");
-        System.out.println("2. antrian keluar");
-        System.out.println("3. Cek antrian terdepan");
-        System.out.println("4. Cek semua antrian");
-        System.out.println("----------------------------");
+        System.out.println("2. Antrian keluar");
+        System.out.println("3. Cek Antrian terdepan");
+        System.out.println("4. Cek Semua Antrian");
+        System.out.println("5. Cek Antrian paling belakang");
+        System.out.println("-------------------------------");
     }
     public static void main(String[] args) {
         Scanner sc07 = new Scanner(System.in);
@@ -48,6 +49,13 @@ public class NasabahMain16 {
                     break;
                 case 4:
                     antri.print();
+                    break;
+                case 5:
+                    Nasabah16 rearData = antri.peekRear();
+                    if (rearData != null) {
+                        System.out.println("Antrian paling belakang: " + rearData.alamat + " " + rearData.umur + " "
+                                + rearData.noRek + " " + rearData.saldo + " " + rearData.nama);
+                    }
                     break;
             }
         }while ( pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4);
