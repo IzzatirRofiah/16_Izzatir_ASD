@@ -135,4 +135,44 @@ public class LinkedList16 {
             }
         }
     }
+    public void insertBefore(int key, int input) {
+        Node16 newNode = new Node16(input, null);
+        if (isEmpty()) {
+            System.out.println("Linked list kosong");
+        } else if (head.data == key) {
+            addFirst(input);
+        } else {
+            Node16 currentNode = head;
+            while (currentNode.next != null && currentNode.next.data != key) {
+                currentNode = currentNode.next;
+            }
+            if (currentNode.next == null) {
+                System.out.println("Key tidak ditemukan");
+            } else {
+                newNode.next = currentNode.next;
+                currentNode.next = newNode;
+            }
+        }
+    }
+    public void removeAt(int index) {
+        if (isEmpty()) {
+            System.out.println("Linked list kosong");
+        } else if (index == 0) {
+            removeFirst();
+        } else {
+            Node16 currentNode = head;
+            for (int i = 0; i < index - 1; i++) {
+                if (currentNode.next == null) {
+                    System.out.println("Index melebihi batas");
+                    return;
+                }
+                currentNode = currentNode.next;
+            }
+            if (currentNode.next == null) {
+                System.out.println("Index melebihi batas");
+            } else {
+                currentNode.next = currentNode.next.next;
+            }
+        }
+    }
 }
